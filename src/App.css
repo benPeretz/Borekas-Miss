@@ -7,6 +7,307 @@
   pointer-events: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+.section-text-title hr {
+  border-top: solid 3px;
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #614112;
+  opacity: 1;
+  margin: auto;
+
+}
+
+.navbar {
+  padding: 15px;
+  /* logo size */
+  --bs-navbar-brand-font-size: 1.5rem;
+  background-color: #e8c09e8f;
+
+}
+
+.navbar li {
+  --bs-navbar-nav-link-padding-x: 1rem;
+  font-size: 21px;
+}
+
+.section {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+.section-top {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../public/img/tali.jpg");
+  width: 100%;
+  height: 32rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+
+}
+
+
+
+.div-text-title {
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-title {
+  position: relative;
+}
+
+.text-title h1 {
+  font-family: 'Rubik Dirt', serif;
+  letter-spacing: 0.5rem;
+  background: linear-gradient(rgb(203 161 84), rgb(255 255 255));
+  -webkit-text-fill-color: #ffa0a038;
+  -webkit-background-clip: text;
+  font-size: 7rem;
+}
+
+.borekas {
+  left: 18rem;
+}
+
+
+.section-text-title h1 {
+
+  font-family: 'Rubik Dirt', serif;
+  letter-spacing: 0.5rem;
+  -webkit-background-clip: text;
+  font-size: 4rem;
+  color: #614112;
+  flex-shrink: 0;
+}
+
+.section-text-p {
+  display: flex;
+  justify-content: center;
+}
+
+.section-text-p p {
+  width: 52%;
+  font-style: oblique;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+}
+
+.gridItem {
+  background-color: #61dafb;
+  height: 13rem;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+
+}
+
+.gridItemBig {
+  height: 27rem;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.gridItem h3 {
+  color: white;
+}
+
+/* homeSectionpastries */
+
+.cardd {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 320px;
+  margin: auto 1rem;
+  text-align: center;
+  font-family: arial;
+}
+
+.product--image {
+  width: 100%;
+  height: 12em;
+  object-fit: cover;
+}
+
+.cardd-title {
+  color: grey;
+  font-size: 22px;
+
+}
+
+
+
+.footer {
+  background: linear-gradient(300deg, #e8c09e, #e8c09e, #3d373b);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  color: white;
+}
+
+.contact-us {
+  width: 50%;
+}
+
+.icons {
+  font-size: 2rem;
+}
+
+.footer h4 {
+  font-size: 15px;
+}
+
+
+
+.subjectProduct,
+.singleProduct {
+  margin-top: 6rem;
+}
+
+.hrClass {
+  border-top: dotted 15px;
+  width: 15%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #e8c09e8f;
+  opacity: 1;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* because the carousel it's only with 3 items ,if will more than 3 remember to delete this */
+/* .contentProductSubject .react-multi-carousel-list {
+  justify-content: center;
+} */
+
+.contentProductSubject .react-multi-carousel-list li {
+  display: flex;
+  justify-content: center;
+}
+
+.subjectProductItem-p {
+  width: 50%;
+  display: inline-block;
+}
+
+/* single product page */
+
+.singleProducFlex {
+  display: flex;
+  height: 40rem;
+  gap: 20px;
+  justify-content: center;
+}
+
+.productCarouselImages {
+
+  width: 55%;
+  position: relative;
+  top: 10rem;
+}
+
+.productCarouselImages img {
+  height: 18rem;
+}
+
+.productContent {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+
+@media (max-width:1000px) and (min-width:200px) {
+
+  .borekas {
+    left: 0rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gridItemBig {
+    grid-row-start: auto;
+    grid-row-end: auto;
+    grid-column-end: auto;
+    grid-column-start: auto;
+    height: 13rem;
+  }
+
+  .section-text-p p,
+  .subjectProductItem-p {
+    width: 80%;
+  }
+
+  .contact-us {
+    width: 85%;
+  }
+
+  .hrClass {
+    width: 25%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+
+}
+
+
+@media (max-width:770px) and (min-width:200px) {
+
+  .gridItemBig,
+  .gridItem {
+    height: 9rem;
+  }
+
+  .hrClass {
+    width: 35%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .singleProducFlex {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .productCarouselImages {
+    top: 0rem;
+    width: 85%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -32,6 +333,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
